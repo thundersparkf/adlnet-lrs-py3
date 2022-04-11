@@ -10,7 +10,7 @@ RUN apt-get update --allow-insecure-repositories && \
 	pip3 install fabric3 virtualenv
 
 RUN echo "Cloning LRS Branch" && \
-	git clone https://github.com/adlnet/ADL_LRS /opt/lrs/ADL_LRS		
+	git clone https://github.com/thundersparkf/adlnet-lrs-py3.git /opt/lrs/ADL_LRS		
 
 WORKDIR /opt/lrs/ADL_LRS
 
