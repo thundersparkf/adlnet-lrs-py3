@@ -5,7 +5,7 @@ ENV UWSGI_PIP_VERSION 2.0.20
 RUN mkdir /opt/lrs /opt/lrs/logs
 
 # Install our reqs
-RUN apt-get update && \
+RUN apt-get update --allow-insecure-repositories && \
 	apt-get install -y && \
 	pip3 install fabric3 virtualenv
 
