@@ -38,7 +38,7 @@ GOOGLE_RECAPTCHA_SECRET_KEY = config.get('recaptcha', 'GOOGLE_RECAPTCHA_SECRET_K
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': config.get('database', 'NAME'),
         'USER': config.get('database', 'USER'),
         'PASSWORD': config.get('database', 'PASSWORD'),
